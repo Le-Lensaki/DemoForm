@@ -11,6 +11,10 @@ create table NguoiDung (
 go
 insert into NguoiDung(username,pass,email) values ('abcdf','123','lephuonghoangx4@gmail.com')
 go
+delete from nguoidung where username = 'abcdf' and pass = '123' and email ='lephuonghoangx4@gmail.com'
+go
+update NguoiDung set username ='19dh1110793', pass ='khongco', email = '' where username = '19dh1110793'
+go
 /*select * from NguoiDung*/
 go
 create trigger trInsertUser on NguoiDung
